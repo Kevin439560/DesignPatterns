@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Factory.Entities;
+﻿using DesignPatterns.Facade.Departments;
+using DesignPatterns.Factory.Entities;
 using DesignPatterns.Factory.Factorys;
 
 namespace DesingPatterns {
@@ -6,6 +7,16 @@ namespace DesingPatterns {
     
         static void Main(string[] args) {
 
+
+            FacaDepartment facade = new ();
+            facade.ShowInfo();
+
+
+
+
+
+            /*
+             //// FACTORY ////
             BicycleFactory BF = new();
             CarFactory CF = new ();
             MotorcycleFactory MF = new ();
@@ -17,7 +28,7 @@ namespace DesingPatterns {
             b2.ShowInfo();
             b3.ShowInfo();
             
-
+            */
         }
     }
 
